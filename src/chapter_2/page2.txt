@@ -1,0 +1,85 @@
+
+
+replaceFirst(oldValue, newValue): replaces only the first matching character in
+the String, returns —> String
+Ex 1.
+String str = “Wooden Spoon”;
+// 01234567891011
+String result = str.replaceFirst(target “o”,
+replacement “e”);
+Output: Weoden Spoon
+Ex 2.
+String str = “I love Java, Java is the best”;
+String result = str.replaceFirst(“Java”, “C#”);
+Output: I love C#, Java is the best
+substring(begIndex): creates substring starting from the given beginning index to
+the end of the String, returns —> String
+String str = “Java Programming Language”;
+String result = str.substring(str.indexOf(“P”));
+Output: Programming Language
+substring(begIndex): creates substring starting from the given beginning index to
+the given ending index of the String, returns —> String
+Ex1
+String str = “Java Programming_Language”;
+String result = str.substring(str.indexOf(“P”), str.IndexOf(“g_”)+1);
+Output: Programming
+Ex 2
+String str = “Java Programming_Language”;
+String result = str.substring(str.indexOf(“P”), str.lastIndexOf(“space”));
+Output: Programming
+Ex 3
+String str = “I l o v e Java”;
+//. 0123 4 5678910
+String result = str.substring(2, 5+1);
+Output: love
+3
+repeat(N): repeats the String N number of times, returns —> String
+(This method doesn’t exist in older versions of Java before JDK11)
+String str = “Java”;
+String result = str.repeat(3);
+Output: JavaJavaJava
+isEmpty(): checks if the String’ length is zero, returns —> boolean
+String str = “ ”;
+boolean result = str.isEmpty(); //the length is not zero
+Output: false
+isBlank(): checks if the String is blank, returns —> boolean
+String str = “ ”;
+boolean result = str.isBlank(); // the length is blank
+Output: true
+equals(String): compares contents of two Strings, returns —> boolean
+(Remember ! Methods are case sensitive )
+String str1 = “Java”;
+String str2 = new String （“Java” ）
+String str3="Java"
+System.out.println(str1 == str2); // false (str1 is in string pool, str2 is not)
+System.out.println(str1.equals(str2)); // true (compares text value)
+System.out.println(str1==str3); //true
+equalsIgnoreCase(String): compares contents of two Strings, returns—>
+boolean
+(This method is not case sensitive )
+String str1 = “Java”;
+String str2 = “java”
+System.out.println(str1.equals(str2)); // false
+System.out.println(str1.equalsIgnoreCase(str2)); // true
+4
+contains(String): checks if the String contains given String, returns—> boolean
+String str = “I Love Java Programming Language”;
+Boolean hasCSharp = str.contains(“C#”);
+Output: false
+Boolean hasJava = str.contains(“Java”);
+Output: true
+startsWith(String): checks if the String starts with the given character, returns
+—> boolean
+String name = “Wooden Spoon”;
+ boolean result1= name.startsWith(“Wood”);
+Output: true
+boolean result2 = name.startsWith(“Spoon”);
+Output: false
+endsWith(String): checks if the String ends with the given character, returns—>
+boolean
+String name = “Wooden Spoon”;
+ boolean result1= name.endsWith(“Spoon”);
+Output: true
+
+page 2
+text
