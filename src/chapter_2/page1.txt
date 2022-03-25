@@ -1,0 +1,64 @@
+
+
+String - is a combination of multiple characters. Each character in the String has
+its special index number. Once the String is created - it’s immutable, means cannot
+be changed.
+Index number # always starts from 0. Space - is also a character.
+String Methods:
+ charAt(int index) : returns the char at given index, return type—> char
+String str = “Apple”;
+// index: 01234
+Str.charAt(0) -> A
+length(): returns the total number of characters, return type—> int
+Ex 1. Total number of characters
+String str = “Wooden Spoon”;
+Int n = str.length();
+Output: n = 12
+Ex 2. Last index number
+String str = “Wooden Spoon”;
+Int n = str.length() - 1;
+Output: n = 11
+toLowerCase(): returns lower case String version, return type—> String
+String str = “JaVa”;
+str = str.toLowerCase(); // remember to reassign a new value to the String, since once it was
+created, it’s immutable
+Output: java
+toUpperCase(): returns upper case version, return type—> String
+String str = “Java”;
+str = str.toUpperCase(); // remember to reassign a new value to the String, since once it was
+created, it’s immutable
+Output: JAVA
+trim(): returns String without all white(unused) spaces, returns—> String
+String str = “ Java Programming Language “;
+str = str.trim(); —> output: “Java Programming Language”
+1
+indexOf(): returns the first matching character’s index number, returns —> int
+Ex 1. Index of First
+String str = “Wooden Spoon”;
+// 012345………..
+Int indexNumOfFirstO = str.indexOf(“o”);
+Output: 1
+Ex 2. Index of Second
+String str = “Wooden Spoon”;
+// 012345………..
+Int indexNumOfSecondO = str.indexOf(“od”);
+Output: 2
+Ex 3. Index of Third
+String str = “Wooden Spoon”;
+// 0123456789101112
+Int indexNumOfThirdO = str.indexOf(“po”) + 1;
+ //found index of “p” and + 1 to get number of third “o”
+Output: 9
+lastIndexOf(): returns the last matching character’s index number, returns—> int
+String str = “Wooden Spoon”;
+// 01234567891011
+Int indexOfLastO = str.lastIndexOf(“o”);
+Output: 10
+replace(oldValue, newValue): replaces all matching char-s, with new char-s,
+returns —> String
+String str = “Wooden Spoon”;
+// 01234567891011
+String result = str.replace(target “o”, replacement “e”);
+Output: Weeden Speen
+String result = str.replace(target “Wooden”, replacement “Metal”);
+Output: Metal Spoon
